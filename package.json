@@ -6,6 +6,15 @@
   "scripts": {
     "dev": "nodemon app.js"
   },
+  "bin": "app.js",
+  "pkg": {
+    "assets": [
+      "node_modules/puppeteer/.local-chromium/**/*"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,10 +23,10 @@
     "express": "^5.2.1",
     "fs": "^0.0.1-security",
     "nodemon": "^3.1.11",
+    "pkg": "^5.8.1",
     "puppeteer": "^24.32.1",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2"
   },
-  "devDependencies": {},
   "description": ""
 }

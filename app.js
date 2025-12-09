@@ -57,7 +57,7 @@ app.use(express.urlencoded({ extended: true }));
 // ---------------------------
 // POST endpoint
 // ---------------------------
-app.post("/send-data", async (req, res) => {
+app.post("/SetCustomerNusuk", async (req, res) => {
   const data = req.body;
 
   // Puppeteer isn't ready to receive data yet
@@ -82,8 +82,8 @@ app.post("/send-data", async (req, res) => {
 // ---------------------------
 // Server start
 // ---------------------------
-app.listen(3000, () => {
-  console.log("API ready → http://localhost:3000");
+app.listen(8733, () => {
+  console.log("API ready → http://localhost:8733");
 });
 
 // ---------------------------
